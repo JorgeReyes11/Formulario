@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.4.1.min.js"/></script>
+    <script src="../Formulario/js/popper.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"/></script>
+    
+    <title>Formulario</title>
+
+</head>
+<body>
+
+        <form>
+            <div class="container">
+                <!--NAME-->
+                <div class="form-group">
+                        <label for="name" id="lblname">NOMBRE:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name"> 
+                </div>                   
+                <br>
+                <!--AGE-->
+                <div class="form-group">
+                        <label for="age" id="lblage">EDAD:</label>
+                        <input type="text" class="form-control" id="age" placeholder="Enter Age">   
+                </div>
+                <br>
+                <!--SEXO/GENERO MASCULINO-->
+                <label for="sexo" id="lblsex">SEXO:</label>
+                <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="man">
+                        <label class="form-check-label" for="man">Masculino</label>
+                </div>
+                <!--SEXO/GENERO FEMENINO-->
+                <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="woman">
+                        <label class="form-check-label" for="woman">Femenino</label>
+                </div>
+                <br>
+                <!--MAJOR-->
+                <div class="form-group">
+                    <label for="major" id="lblmajor">CARRERA:</label>
+                    <select class="form-control" id="major">
+                        <option value="">Selecciona una opcion</option>
+                        <option value="TICS DSM">TICS DSM</option>
+                        <option value="Administracion">Administracion</option>
+                        <option value="Mecatronica">Mecatronica</option>
+                        <option value="Contaduria">Contaduria</option>
+                        <option value="Medicina">Medicina</option>
+                    </select>
+                </div>
+                <!--ESTATE-->
+                <div class="form-group" id="lblstate">
+                    <label for="state">ESTADO:</label>
+                    <select class="form-control" id="state">
+                        <option value="">Selecciona una opcion</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Nuevo Leon">Nuevo Leon</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                    </select>
+                </div>
+                <br>
+                <!--BUTTON READY-->
+                <button type="button"  id="btnlisto" class="btn-block btn-primary btn btn-lg">Listo</button>                
+            </div>
+        </div><!--Fin container1-->
+            <br>
+            <!--TABLE-->
+            <div class="container">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">EDAD</th>
+                    <th scope="col">SEXO</th>
+                    <th scope="col">CARRERA</th>
+                    <th scope="col">ESTADO</th>
+                    <th scope="col">LEGAL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <!--<tr>
+                     <th scope="row"></th>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                 </tr>-->
+                </tbody>
+              </table>
+            </div><!--Fin container2-->
+            </form>
+    
+    <script src="java-css.js"></script>
+</body>
+</html>
